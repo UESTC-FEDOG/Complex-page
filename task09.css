@@ -1,0 +1,304 @@
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.col-md-12 {
+	max-width: 893px;
+	box-sizing: border-box;
+	background-color: rgba(158,158,158,0.3);
+}
+
+/*css reset*/
+
+
+/*time-info 组件开始*/
+.clearfix:after {
+	display: block;
+	content: "";
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.time-info {
+	margin-bottom: 15px;
+}
+.time-info button {
+	height: 65px;
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+	float: left;
+	/*display: inline-block;*/
+}
+
+.time-info button:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 28px;
+	left: 6px;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	transform: rotate(45deg);
+}
+
+.time-info button.right:after {
+	transform: rotate(225deg);
+}
+
+
+.time-info-money ul li {
+	float: left;
+	width: 134px;
+	height: 65px;
+	text-align: center;
+	background-color: white;
+	margin-left: 4px;
+	box-sizing: border-box;
+	padding-top: 10px;
+	border: 1px solid #ced1d4;
+}
+
+.time-info-money ul li time {
+	font-size: 14px;
+}
+
+.time-info-money ul li p {
+	font-size: 21px;
+	color: #ec6602;
+	margin: 15px 0;
+}
+.time-info-money ul li p span {
+	color: #aeaeae;
+	font-size: 18px;
+}
+.time-info-money ul li:first-child {
+	border-top: 2px solid #4388c9;
+}
+
+.time-info-money ul li:hover {
+	border-top: 2px solid #4388c9;
+}
+
+.time-info-money ul li:last-child {
+	margin-right: 4px;
+}
+
+.time-info-history {
+	float: left;
+	width: 135px;
+	height: 65px;
+	margin-left: 4px;
+	padding-left: 60px;
+	padding-top: 25px;
+	background-color: white;
+	background-image: url(1.png);
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	background-position: 20px;
+	    border: 1px solid #ced1d4;
+}
+
+/*time-info 组件结束*/
+
+/*time-collection 组件开始*/
+.time-collection {
+	margin-bottom: 15px;
+}
+
+.time-collection span {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.time-collection ul li {
+	float: left;
+	width: 200px;
+	background-color: white;
+	margin-right: 31px;
+	position: relative;
+	box-sizing: border-box;
+	border: 1px solid #ced1d4;
+	border-left: 2px solid black;
+	padding-left: 4px;
+}
+
+.time-collection .block {
+	width: 60px;
+	height: 40px;
+	background-color: black;
+	position: absolute;
+	top: 12px;
+	right: 20px;
+}
+
+.time-collection ul li:first-child {
+	border-left: 2px solid #43b29d;
+}
+
+.time-collection ul li:first-child .block{
+	background-color: #43b29d;
+}
+
+.time-collection ul li:nth-child(2) {
+	border-left: 2px solid #388ac1;
+}
+
+.time-collection ul li:nth-child(2) .block {
+	background-color: #388ac1;
+}
+
+.time-collection ul li:nth-child(3) {
+	border-left: 2px solid #d04b36;
+}
+
+.time-collection ul li:nth-child(3) .block {
+	background-color: #d04b36;
+}
+
+.time-collection ul li:nth-child(4) {
+	border-left: 2px solid #e2cd46;
+	margin-right: 0;
+}
+
+.time-collection ul li:nth-child(4) .block {
+	background-color: #e2cd46;
+}
+
+/*time-collection 组件结束*/
+
+/*project组件开始*/
+.project {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project span {
+	color: #c3c2c2;
+}
+.project-tab {
+	width: 520px;
+	height: 359px;
+	background-color: white;
+	border: 1px solid #ced1d4;
+	position: relative;
+}
+
+.project-tab header {
+	height: 41px;
+	background-color: #e7e8eb;
+	line-height: 41px;
+	padding-left: 20px;
+	color: #c3c2c2;
+}
+
+.project-tab ul {
+	margin: 16px 0 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.project-tab ul li {
+	float: left;
+	width: 88px;
+	height: 29px;
+	border-radius: 4px 4px 0 0;
+	line-height: 29px;
+	text-align: center;
+	background-color: #ededf0;
+	margin-right: 2px;
+}
+
+.project-tab ul li:first-child {
+	background-color: white;
+	border: 1px solid #cacbcb;
+	border-bottom: none;
+}
+
+.project-tab .project-tab-content {
+	padding: 25px;
+	position: absolute;
+	left: 20px;
+	top: 86px;
+	border: 1px solid #cacbcb;
+}
+
+.project-tab .project-tab-content table {
+	border-collapse: collapse;
+}
+
+.project-tab .project-tab-content table td{
+	border: 1px solid #cacbcb;
+	width: 100px;
+	height: 28px;
+	text-align: center;
+}
+.project-tab .project-tab-content tr:first-child td:first-child {
+	background-color: #ededf0;
+}
+.project-list {
+	width: 350px;
+	height: 359px;
+	background-color: white;
+	border: 1px solid #ced1d4;
+}
+
+.project-list header {
+	height: 41px;
+	background-color: #e7e8eb;
+	line-height: 41px;
+	padding-left: 20px;
+	color: #c3c2c2;
+}
+
+.project-list ul {
+	margin: 20px 25px 20px 25px;
+}
+
+.project-list ul li {
+	display: block;
+}
+.project-list ul li:nth-child(2) {
+	display: flex;
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #cacbcb;
+}
+
+.project-list .project-list-price {
+	flex:1;
+	padding-top: 2px;
+}
+
+.project-list .project-list-leader {
+	flex: 2;
+	padding-top: 2px;
+	padding-left: 20px;
+	border-left: 1px solid #cacbcb;
+}
+
+.project-list .project-list-comfirm {
+	margin-top: 80px;
+	border-top: 1px solid #cacbcb;
+	padding-top: 10px;
+}
+
+.project-list .project-list-comfirm button {
+	display: inline-block;
+	margin-left: 140px;
+	height: 22px;
+	border: 0;
+	background-color: #388ac1;
+	color: white;
+}
+
+/*project组件借宿*/
