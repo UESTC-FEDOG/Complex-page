@@ -576,13 +576,14 @@ section.car{
 section.car div.calendar{
 	border-radius: 5px;
 	border: 1px solid #ced1d4;
+	background-color: #fff;
 }
 h3{
 	color: #b5b5b5;
 	font-size: 12px;
 	padding-left: 20px;
 	line-height: 40px;
-	background-color: #f4f5f6;
+	background-color: #e7e8eb;
 	border-bottom: 1px solid #ced1d4;
 	font-weight: initial;
 	margin: 0;
@@ -623,6 +624,7 @@ section.car div.calendar table tr:first-child{
 	border-bottom: 1px solid #e2e3e4;
 	padding: 8px 0;
 	height: 34px;
+	margin: 10px 0;
 }
 section.car div.calendar table tr{
 	display: flex;
@@ -648,6 +650,7 @@ section.car div.calendar table tr td.weekend b{
 section.car div.rank{
 	border-radius: 5px;
 	border: 1px solid #ced1d4;
+	background-color: #fff;
 }
 section.car div.rank table{
 	margin: 24px 40px;
@@ -658,21 +661,26 @@ section.car div.rank table td{
 	height: 30px;
 	border: 1px solid #ced1d4;
 }
+section.car div.rank table thead td:last-child{
+	padding-right: 210px;
+	padding-top: 0;
+}
 section.car div.rank table td:first-child{
-	width: 68px;
+	width: 78px;
 }
 section.car div.rank table td:nth-child(2){
-	width: 90px;
+	width: 98px;
 }
 section.car div.rank table td:nth-child(3){
-	width: 290px;
+	width: 350px;
+	padding-top: 10px;
 }
 section.car div.rank table div{
 	height: 4px;
-	width: 167px;
+	width: 180px;
 	background-color: #dcdcdc;
 	float: right;
-	margin: 8px;
+	margin: 8px 30px 8px 0;
 }
 section.car div.rank table div div{
 	height: 4px;
@@ -680,7 +688,7 @@ section.car div.rank table div div{
 	margin: 0;
 }
 section.car div.rank tbody tr:nth-child(1){
-	background-color: #f4f5f6;
+	background-color: #e7e8eb;
 }
 section.car div.rank tbody tr:nth-child(1) div div{
 	background-color: #fa6757;
