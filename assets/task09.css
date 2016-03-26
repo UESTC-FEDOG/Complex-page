@@ -587,19 +587,22 @@ h3{
 	background-color: #f4f5f6;
 	border-bottom: 1px solid #ced1d4;
 	font-weight: initial;
+	margin: 0;
 }
 section.car div.calendar ul.date{
 	margin: 10px 10px 0 15px;
+	overflow: hidden;
 }
 section.car div.calendar ul.date li{
 	border: 1px solid #cfcfcf;
 	background: #fff url(down.png) no-repeat 88% 50%;
 	padding: 4px;
 	margin-left: 5px;
+	float: left;
 }
-/*section.car div.calendar ul.date li:first-child,li:last-child{
+section.car div.calendar ul.date li:first-child,li:last-child{
 	width: 72px;
-}*/
+}
 section.car div.calendar ul.date li:nth-child(2){
 	width: 83px;
 }
