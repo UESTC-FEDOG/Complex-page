@@ -632,6 +632,7 @@ section.car div.calendar table tr{
 section.car div.calendar table tr td{
 	width: 40px;
 	height: 40px;
+	margin-left: 3px;
 }
 .data_mark{
 	border: 1px solid #fec24d;
