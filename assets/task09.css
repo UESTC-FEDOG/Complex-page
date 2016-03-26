@@ -1,0 +1,717 @@
+/*css reset*/
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body,p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*header*/
+
+#header {
+    background-color: #2189BE;
+    min-height: 60px;
+}
+
+#header > div {
+    height: 100%;
+}
+
+.logo {
+    padding-left: 50px;
+}
+.logo > div{
+    width: 50px;
+    height: 40px;
+    background-color: white;
+}
+
+.search {
+    padding-top: 15px;
+}
+
+.search input {
+    width: 300px;
+    max-width: calc(100% - 80px);
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 30px;
+}
+
+.search button {
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding-left: 20px;
+}
+
+/*侧栏*/
+.main-row {
+    overflow: hidden;
+}
+#aside {
+    background-color: #2B2E3D;
+    color: #647587;
+    padding: 0;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+.account-information {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.account-information > div {
+    display: inline-block;
+}
+
+.account-profile {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.account-name {
+    color: white;
+    margin-left: 10px;
+}
+
+.account-data {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.account-data > div {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.account-data > div:first-child {
+    border-right: 2px solid #323546;
+}
+
+.account-data span {
+    display: block;
+}
+
+.nav-list > li {
+    padding: 5px 0 5px 80px;
+}
+
+.nav-list li.active {
+    background-color: #373D4D;
+}
+
+.nav-list h1,
+.nav-list h2 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+}
+
+.nav-list > li ul {
+    padding-left: 20px;
+}
+
+.nav-list li h2::before {
+    content: '> '
+}
+
+.nav-list > li li.active h2::before {
+    content: "↓ "
+}
+
+.nav-list > li .active {
+    color: white;
+}
+
+.nav-list > li .active ~ * {
+    color: #647587;
+}
+
+.nav-list > li *:not(ul) {
+    margin: 10px 0;
+}
+
+#main {
+    background-color: #EDEDED;
+    padding: 0;
+}
+
+#main > .row {
+    margin: 15px 50px;
+}
+
+/*面包屑导航*/
+.breadcrumb-nav {
+    background-color: white;
+    padding-left: 30px;
+}
+
+.breadcrumb-nav > a {
+    display: inline-block;
+    color: #ABABAB;
+    padding: 10px 0;
+}
+
+.breadcrumb-nav > a::after {
+    content: "/";
+    margin: 0 10px;
+}
+
+.breadcrumb-nav > a:last-child {
+    color: #81A8C9;
+}
+
+.breadcrumb-nav > a:last-child::after {
+    content: '';
+}
+
+/*查询组件*/
+
+.trade-query {
+    background-color: white;
+    border: 1px solid #ced1d4;
+}
+
+.trade-query > div {
+    text-align: center;
+    
+}
+
+
+.trade-query > div:nth-child(3) {
+    text-align: left;
+}
+
+.trade-query label {
+    margin-right: 20px;
+    color: #ABABAB;
+}
+
+.trade-query input,
+.trade-query select {
+    height: 25px;
+    border: 1px solid #ced1d4;
+    padding-left: 10px;
+}
+
+.trade-query > div:first-child select {
+    width: 130px;
+}
+
+.trade-query > div:nth-child(2) select {
+    width: 150px;
+}
+
+
+.trade-query > div:nth-child(2) div:first-child {
+    margin-bottom: 10px;
+}
+
+.trade-query > div:nth-child(3) div {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.trade-query > div:nth-child(3) div:nth-child(n+3) {
+    margin-bottom: 0;
+}
+
+.trade-query > div:nth-child(3) div:nth-child(2) select, 
+.trade-query > div:nth-child(3) div:nth-child(3) select {
+    width: 120px;
+    max-width: 100%;
+}
+
+.trade-query > div:nth-child(3) div:nth-child(1) input, 
+.trade-query > div:nth-child(3) div:nth-child(4) select {
+    width: 160px;
+    max-width: 100%;
+}
+
+.trade-query > div:last-child {
+    text-align: left;
+    padding: 0;
+    padding-top: 25px;
+}
+
+.search-button {
+    background-color: #388ac1;
+    height: 30px;
+    width: 70px;
+    border: none;
+    color: white;
+}
+
+
+@media all and (max-width: 768px) {
+    
+    #main > .row {
+        margin: 15px 10px;
+    }
+    .trade-query > div {
+        text-align: left;
+    }
+    
+    
+    .trade-query > div:nth-child(3) div {
+        margin-left: 0;
+    }
+    .trade-query > div:nth-child(3) div:nth-child(n+3) {
+        margin-bottom: 10px;
+    }
+    .trade-query > div:nth-child(3) div:nth-child(1) input, 
+    .trade-query > div:nth-child(3) div:nth-child(4) select {
+        width: 140px;
+    }
+}
+
+/*time-info 组件开始*/
+.time-info {
+	margin-bottom: 15px;
+}
+
+.time-info > div {
+    padding: 0;
+}
+
+.time-info button {
+	height: 65px;
+	position: relative;
+	max-width: 30px;
+	cursor: pointer;
+    background-color: white;
+    border: 1px solid #ced1d4;
+}
+
+
+.time-info button:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 28px;
+	left: 6px;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+	transform: rotate(45deg);
+}
+
+.time-info button.right:after {
+	transform: rotate(225deg);
+}
+
+.time-info-money,
+.time-info-money ul{
+    padding: 0
+}
+.time-info-money ul li {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+.time-info-money ul li > div{
+	height: 65px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid #ced1d4;
+}
+
+.time-info-money ul li:first-child > div{
+	border-top: 2px solid #4388c9;
+}
+
+.time-info-money ul li > div:hover {
+	border-top: 2px solid #4388c9;
+}
+
+.time-info-money ul li time {
+	font-size: 14px;
+}
+
+.time-info-money ul li p {
+	font-size: 21px;
+    text-align: center;
+	color: #ec6602;
+	margin: 0 0 10px 0;
+}
+.time-info-money ul li p span {
+	color: #aeaeae;
+	font-size: 18px;
+}
+
+
+
+.time-info-history {
+	height: 65px;
+	margin-left: 4px;
+	padding-left: 60px;
+	padding-top: 25px;
+	background-color: white;
+	background-image: url(1.png);
+	background-repeat: no-repeat;
+	background-position: 20px;
+	    border: 1px solid #ced1d4;
+}
+
+/*time-info 组件结束*/
+
+/*time-collection 组件开始*/
+.time-collection {
+	margin-bottom: 15px;
+}
+
+.time-collection span {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.time-collection ul li > div {
+	position: relative;
+	background-color: white;
+	border: 1px solid #ced1d4;
+	border-left: 2px solid black;
+    padding: 10px;
+    
+}
+
+.time-collection ul li:first-child {
+    padding-left: 0;
+}
+
+.time-collection ul li:last-child {
+    padding-right: 0;
+}
+
+.time-collection .block {
+	width: 60px;
+	height: 40px;
+	background-color: black;
+	position: absolute;
+	top: 12px;
+	right: 20px;
+}
+
+.time-collection ul li:first-child > div {
+	border-left: 2px solid #43b29d;
+}
+
+.time-collection ul li:first-child .block{
+	background-color: #43b29d;
+}
+
+.time-collection ul li:nth-child(2) > div{
+	border-left: 2px solid #388ac1;
+}
+
+.time-collection ul li:nth-child(2) .block {
+	background-color: #388ac1;
+}
+
+.time-collection ul li:nth-child(3) > div{
+	border-left: 2px solid #d04b36;
+}
+
+.time-collection ul li:nth-child(3) .block {
+	background-color: #d04b36;
+}
+
+.time-collection ul li:nth-child(4) > div {
+	border-left: 2px solid #e2cd46;
+	margin-right: 0;
+}
+
+.time-collection ul li:nth-child(4) .block {
+	background-color: #e2cd46;
+}
+
+/*time-collection 组件结束*/
+.project span {
+	color: #c3c2c2;
+}
+
+.project > div {
+    padding-left: 0;
+}
+
+.project > form {
+    padding-right: 0;
+}
+
+.project-tab {
+	background-color: white;
+	border: 1px solid #ced1d4;
+    padding-bottom: 20px;
+}
+
+.project-tab header {
+	height: 41px;
+	background-color: #e7e8eb;
+	line-height: 41px;
+	padding-left: 20px;
+	color: #c3c2c2;
+}
+
+.project-tab ul {
+	margin: 16px 0 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.project-tab ul li {
+	float: left;
+	width: 88px;
+	height: 29px;
+	border-radius: 4px 4px 0 0;
+	line-height: 29px;
+	text-align: center;
+	background-color: #ededf0;
+	margin-right: 2px;
+}
+
+.project-tab ul li:first-child {
+	background-color: white;
+	border: 1px solid #cacbcb;
+	border-bottom: none;
+}
+
+.project-tab .project-tab-content {
+	padding: 25px;
+    margin: 0 20px;
+	border: 1px solid #cacbcb;
+}
+
+.project-tab .project-tab-content table {
+	border-collapse: collapse;
+}
+
+.project-tab .project-tab-content table td{
+	border: 1px solid #cacbcb;
+	width: 140px;
+	height: 28px;
+	text-align: center;
+    padding: 10px;
+}
+.project-tab .project-tab-content tr:first-child td:first-child {
+	background-color: #ededf0;
+}
+.project-list {
+	height: 359px;
+	background-color: white;
+	border: 1px solid #ced1d4;
+}
+
+.project-list header {
+	height: 41px;
+	background-color: #e7e8eb;
+	line-height: 41px;
+	padding-left: 20px;
+	color: #c3c2c2;
+}
+
+.project-list ul {
+	margin: 20px 25px 20px 25px;
+}
+
+.project-list ul li {
+	display: block;
+}
+.project-list ul li:nth-child(2) {
+	display: flex;
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #cacbcb;
+}
+
+.project-list .project-list-price {
+	flex:1;
+	padding-top: 2px;
+}
+
+.project-list .project-list-leader {
+	flex: 2;
+	padding-top: 2px;
+	padding-left: 20px;
+	border-left: 1px solid #cacbcb;
+}
+
+.project-list .project-list-comfirm {
+	margin-top: 80px;
+	border-top: 1px solid #cacbcb;
+	padding-top: 10px;
+}
+
+.project-list .project-list-comfirm button {
+	display: inline-block;
+	margin-left: 140px;
+}
+
+/*project组件借宿*/
+
+li.project{
+	list-style: none;
+	float: left;
+	font-size: 12px;
+}
+
+table{
+	cursor: pointer;
+	border-collapse: collapse;
+}
+section.car{
+	font-size: 12px;
+}
+section.car div.calendar{
+	float: left;
+	width: 352px;
+	border-radius: 5px;
+	border: 1px solid #ced1d4;
+}
+h3{
+	color: #b5b5b5;
+	font-size: 12px;
+	padding-left: 20px;
+	line-height: 40px;
+	background-color: #f4f5f6;
+	border-bottom: 1px solid #ced1d4;
+	font-weight: initial;
+}
+section.car div.calendar ul.date{
+	margin: 10px 10px 0 15px;
+}
+section.car div.calendar ul.date li{
+	border: 1px solid #cfcfcf;
+	background: #fff url(down.png) no-repeat 88% 50%;
+	padding: 4px;
+	margin-left: 5px;
+}
+/*section.car div.calendar ul.date li:first-child,li:last-child{
+	width: 72px;
+}*/
+section.car div.calendar ul.date li:nth-child(2){
+	width: 83px;
+}
+section.car div.calendar ul.date li:nth-child(3){
+	width: 73px;
+}
+section.car div.calendar table{
+	margin: 10px 10px 20px 20px;
+	border-collapse: collapse;
+	display: flex;
+	text-align: center;
+}
+section.car div.calendar table tr:first-child{
+	border-top: 1px solid #a8cfec;
+	border-bottom: 1px solid #e2e3e4;
+	padding: 8px 0;
+	height: 34px;
+}
+section.car div.calendar table tr{
+	display: flex;
+	justify-content: space-around;
+	padding: 8px 0;
+	width: 313px;
+}
+section.car div.calendar table tr td{
+	width: 40px;
+	height: 40px;
+}
+.data_mark{
+	border: 1px solid #fec24d;
+}
+section.car div.calendar table tr td.festival b{
+	color: #d70025;
+}
+section.car div.calendar table tr td.weekend{
+	color: #d70025;
+}
+section.car div.calendar table tr td.weekend b{
+	color: #000;
+}
+section.car div.rank{
+	float: right;
+	width: 525px;
+	border-radius: 5px;
+	border: 1px solid #ced1d4;
+}
+section.car div.rank table{
+	margin: 24px 40px;
+	border: 1px solid #ced1d4;
+	text-align: center;
+}
+section.car div.rank table td{
+	height: 30px;
+	border: 1px solid #ced1d4;
+}
+section.car div.rank table td:first-child{
+	width: 68px;
+}
+section.car div.rank table td:nth-child(2){
+	width: 90px;
+}
+section.car div.rank table td:nth-child(3){
+	width: 290px;
+}
+section.car div.rank table div{
+	height: 4px;
+	width: 167px;
+	background-color: #dcdcdc;
+	float: right;
+	margin: 8px;
+}
+section.car div.rank table div div{
+	height: 4px;
+	float: left;
+	margin: 0;
+}
+section.car div.rank tbody tr:nth-child(1){
+	background-color: #f4f5f6;
+}
+section.car div.rank tbody tr:nth-child(1) div div{
+	background-color: #fa6757;
+	width: 85%;
+}
+section.car div.rank tbody tr:nth-child(2) div div{
+	background-color: #fc7b57;
+	width: 75%;
+}
+section.car div.rank tbody tr:nth-child(n+3) div div{
+	background-color: #68cded;
+}
+section.car div.rank tbody tr:nth-child(3) div div{
+	width: 65%;
+}
+section.car div.rank tbody tr:nth-child(4) div div{
+	width: 60%;
+}
+section.car div.rank tbody tr:nth-child(5) div div{
+	width: 55%;
+}
+section.car div.rank tbody tr:nth-child(6) div div{
+	width: 50%;
+}
+section.car div.rank tbody tr:nth-child(7) div div{
+	width: 45%;
+}
+section.car div.rank tbody tr:nth-child(8) div div{
+	width: 40%;
+}
+section.car div.rank tbody tr:nth-child(9) div div{
+	width: 35%;
+}
+section.car div.rank tbody tr:nth-child(10) div div{
+	width: 30%;
+}
+
