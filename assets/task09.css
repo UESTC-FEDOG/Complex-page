@@ -574,8 +574,6 @@ section.car{
 	font-size: 12px;
 }
 section.car div.calendar{
-	float: left;
-	width: 352px;
 	border-radius: 5px;
 	border: 1px solid #ced1d4;
 }
@@ -592,6 +590,8 @@ h3{
 section.car div.calendar ul.date{
 	margin: 10px 10px 0 15px;
 	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
 }
 section.car div.calendar ul.date li{
 	border: 1px solid #cfcfcf;
@@ -600,7 +600,7 @@ section.car div.calendar ul.date li{
 	margin-left: 5px;
 	float: left;
 }
-section.car div.calendar ul.date li:first-child,li:last-child{
+section.car div.calendar ul.date li{
 	width: 72px;
 }
 section.car div.calendar ul.date li:nth-child(2){
@@ -615,6 +615,9 @@ section.car div.calendar table{
 	display: flex;
 	text-align: center;
 }
+section.car div.calendar table tbody{
+	width: 100%;
+}
 section.car div.calendar table tr:first-child{
 	border-top: 1px solid #a8cfec;
 	border-bottom: 1px solid #e2e3e4;
@@ -625,7 +628,6 @@ section.car div.calendar table tr{
 	display: flex;
 	justify-content: space-around;
 	padding: 8px 0;
-	width: 313px;
 }
 section.car div.calendar table tr td{
 	width: 40px;
@@ -644,8 +646,6 @@ section.car div.calendar table tr td.weekend b{
 	color: #000;
 }
 section.car div.rank{
-	float: right;
-	width: 525px;
 	border-radius: 5px;
 	border: 1px solid #ced1d4;
 }
