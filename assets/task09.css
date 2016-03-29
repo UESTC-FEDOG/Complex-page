@@ -589,12 +589,14 @@ h3{
 	font-weight: initial;
 	margin: 0;
 }
+
 .car .calendar ul.date{
 	margin: 10px 10px 0 15px;
 	overflow: hidden;
 	display: flex;
 	justify-content: space-around;
 }
+
 .car .calendar ul.date li{
 	border: 1px solid #cfcfcf;
 	background: #fff url(down.png) no-repeat 88% 50%;
@@ -602,24 +604,30 @@ h3{
 	margin-left: 5px;
 	float: left;
 }
+
 .car .calendar ul.date li{
 	width: 72px;
 }
+
 .car .calendar ul.date li:nth-child(2){
 	width: 83px;
 }
+
 .car .calendar ul.date li:nth-child(3){
 	width: 73px;
 }
+
 .car .calendar table{
 	margin: 10px 10px 20px 20px;
 	border-collapse: collapse;
 	display: flex;
 	text-align: center;
 }
+
 .car .calendar table tbody{
 	width: 100%;
 }
+
 .car .calendar table tr:first-child{
 	border-top: 1px solid #a8cfec;
 	border-bottom: 1px solid #e2e3e4;
@@ -627,60 +635,74 @@ h3{
 	height: 34px;
 	margin: 10px 0;
 }
+
 .car .calendar table tr{
 	display: flex;
 	justify-content: space-around;
 	padding: 8px 0;
 }
+
 .car .calendar table tr td{
 	width: 40px;
 	height: 40px;
 	margin-left: 3px;
 }
+
 .data_mark{
 	border: 1px solid #fec24d;
 }
+
 .car .calendar table tr td.festival b{
 	color: #d70025;
 }
+
 .car .calendar table tr td.weekend{
 	color: #d70025;
 }
+
 .car .calendar table tr td.weekend b{
 	color: #000;
 }
+
 .car .rank{
 	border-radius: 5px;
 	border: 1px solid #ced1d4;
 	background-color: #fff;
 }
+
 .car .rank table{
 	margin: 24px 40px;
 	border: 1px solid #ced1d4;
 	text-align: center;
 	width: 85%;
 }
+
 .car .rank table td{
 	height: 30px;
 	border: 1px solid #ced1d4;
 }
+
 .car .rank table thead td:last-child{
 	padding-right: 210px;
 	padding-top: 0;
 }
+
 .car .rank table td:first-child{
 	/*width: 78px;*/
 	width: 20%;
 }
+
 .car .rank table td:nth-child(2){
 	/*width: 98px;*/
 	width: 22%;
 }
+
 .car .rank table td:nth-child(3){
 	/*width: 350px;*/
 	width: 58%;
 	padding-top: 10px;
 }
+
 .car .rank table div{
 	height: 4px;
 	width: 180px;
@@ -688,47 +710,61 @@ h3{
 	float: right;
 	margin: 8px 30px 8px 0;
 }
+
 .car .rank table div div{
 	height: 4px;
 	float: left;
 	margin: 0;
 }
+
 .car .rank tbody tr:nth-child(1){
 	background-color: #e7e8eb;
 }
+
 .car .rank tbody tr:nth-child(1) div div{
 	background-color: #fa6757;
 	width: 85%;
 }
+
 .car .rank tbody tr:nth-child(2) div div{
 	background-color: #fc7b57;
 	width: 75%;
 }
+
 .car .rank tbody tr:nth-child(n+3) div div{
 	background-color: #68cded;
 }
+
 .car .rank tbody tr:nth-child(3) div div{
 	width: 65%;
 }
+
 .car .rank tbody tr:nth-child(4) div div{
 	width: 60%;
 }
+
 .car .rank tbody tr:nth-child(5) div div{
 	width: 55%;
 }
+
 .car .rank tbody tr:nth-child(6) div div{
 	width: 50%;
 }
+
 .car .rank tbody tr:nth-child(7) div div{
 	width: 45%;
 }
+
 .car .rank tbody tr:nth-child(8) div div{
 	width: 40%;
 }
+
 .car .rank tbody tr:nth-child(9) div div{
 	width: 35%;
 }
+
 .car .rank tbody tr:nth-child(10) div div{
 	width: 30%;
 }
+
 
